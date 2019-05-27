@@ -21,4 +21,15 @@ mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(TodosContainer);
+const mapDispatchToProps = dispatch => {
+  return {
+    delete: todoText => dispatch({type: 'DELETE_TODO', payload: todoText})
+  }
+}
+
+renderTodos = () => {
+  return this.props.todos.map(todo => <Todo delete={this.props.delete} key={todo.id} todo={todo} />)
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodosContainer);
