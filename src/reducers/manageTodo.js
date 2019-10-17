@@ -3,6 +3,7 @@ import uuid from 'uuid';
 export default function manageTodo(state = {
   todos: [],
 }, action) {
+  //initializing let id
   let id = uuid();
   switch (action.type) {
 
@@ -12,7 +13,7 @@ export default function manageTodo(state = {
         text: action.payload.text
       };
       return { todos: state.todos.concat(todo) };
-
+    
     case 'DELETE-TODO':
       return {todos: state.todos.filter(todo => todo.id !== action.payload)}
 
