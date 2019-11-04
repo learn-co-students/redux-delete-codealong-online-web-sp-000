@@ -9,7 +9,7 @@ this lesson, you will be able to:
 
 ## Review and Goal
 
-Throughout each code along in this section, notice that we are never updating
+Throughout eac code along in this section, notice that we are never updating
 the DOM directly. Instead, we use the Redux pattern to have our store hold and
 update our state, and we then have React display that state. We want to continue
 with this pattern here.  
@@ -194,7 +194,7 @@ export default function manageTodo(state = {
 ```
 
 Using `uuid()` will generate a long random string each
-time a todo is created. Now, instead of just storing an array of strings in our store, 
+time a todo is created. Now, instead of just storing an array of strings in our store,
 we'll be storing an array of objects.
 
 This causes a problem 'downstream', though: we need to update our TodosContainer
