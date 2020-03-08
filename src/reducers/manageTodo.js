@@ -1,5 +1,3 @@
-import uuid from 'uuid';
-
 export default function manageTodo(state = {
   todos: [],
 }, action) {
@@ -8,7 +6,7 @@ export default function manageTodo(state = {
     case 'ADD_TODO':
 
       const todo = {
-        id: uuid(),
+        id: Math.random()*10000000000000000,
         text: action.payload.text
       }
       return { todos: state.todos.concat(todo) };
