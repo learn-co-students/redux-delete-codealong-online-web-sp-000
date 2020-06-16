@@ -1,4 +1,5 @@
 export default function manageTodo(state = {
+  debugger
   todos: [],
 }, action) {
   console.log(action)
