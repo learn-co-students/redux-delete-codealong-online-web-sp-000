@@ -1,4 +1,4 @@
-# Deleting Items with Redux
+## Deleting Items with Redux
 
 ## Objectives
 
