@@ -1,5 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Todo = props => <li>{props.text}</li>
+const Todo = props => {
 
+const deleteThis = () => props.delete(props.todo.id);
+ return (
+   <div>
+     <span>{props.todo.text}</span>
+     <button onClick={deleteThis}>DELETE</button>
+   </div>
+)
+}
 export default Todo;
