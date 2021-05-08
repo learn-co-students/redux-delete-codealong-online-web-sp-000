@@ -7,7 +7,7 @@ class TodosContainer extends Component {
   //passing props to ToDo.js
   //giving each Todo component rendered access to our 'DELETE_TODO' action 
   renderTodos = () => {
-    return this.props.todos.map(todo => <Todo delete={this.props.delete} key={todo.id} text={todo} />)
+    return this.props.todos.map(todo => <Todo delete={this.props.delete} key={todo.id} todo={todo} />)
   }
 
   render() {
