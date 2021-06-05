@@ -16,6 +16,8 @@ class CreateTodo extends Component {
     this.setState({text: ''})
   }
 
+  notes = "Taken"
+
   handleChange(event) {
     this.setState({
       text: event.target.value
